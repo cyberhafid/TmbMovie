@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "usertest",
+      "surrname": "surok",
+      "mail": "mMonmail",
+      "password": "tonpasse",
+      "solde": "1000",
+      "mises": [
+        {
+          "startDate": "2015-10-07",
+          "idmatch": "999999",
+          "versement": "22222",
+          "pari": "11111"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "RRRRRR",
+      "surrname": "surok",
+      "mail": "mMonmail",
+      "password": "tonpasse",
+      "solde": "10",
+      "mises": [
+        {
+          "startDate": "2019-10-07",
+          "idmatch": "0000",
+          "versement": "15",
+          "pari": "20"
+        },
+        {
+          "startDate": "2019-04-29T20:09:04.980Z",
+          "idmatch": "quelMatch",
+          "versement": "10"
+        },
+        {
+          "startDate": "2019-04-29T20:16:47.857Z",
+          "idmatch": "quelMatch",
+          "versement": "5"
+        },
+        {
+          "startDate": "2019-04-29T20:23:21.896Z",
+          "idmatch": "quelMatch",
+          "versement": "7"
+        },
+        {
+          "startDate": "2019-04-29T20:24:14.573Z",
+          "idmatch": "quelMatch",
+          "versement": "8"
+        },
+        {
+          "startDate": "2019-04-29T20:50:34.932Z",
+          "idmatch": "quelMatch",
+          "versement": "30"
+        }
+      ]
+    }
+  ]
+}
