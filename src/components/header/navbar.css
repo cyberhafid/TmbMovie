@@ -1,0 +1,33 @@
+.btn-nav{
+    margin: 0 10px;
+}
+
+
+.fond{
+
+    background-color: rgb(0, 0, 0) !important;  
+}
+
+
+
+.title-nav{
+    display: inline-block !important;
+}
+
+.modal-navbar{
+   
+    background-color: rgb(0, 0, 0);
+}
+
+#ballon {
+    width:150px;
+    height:80px;
+    z-index:5;
+    position:absolute;
+    top: -10px;
+    left:10px;
+    animation: logo 5s ease-in-out infinite alternate;
+    -webkit-animation: logo 5s ease-in-out infinite alternate;
+}
+
+
