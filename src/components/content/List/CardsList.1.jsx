@@ -17,7 +17,7 @@ const CardsList = ({Numfilm}) => {
             alt={Numfilm.title}
           />
         </div>
-        <div className="px-3">
+        <div  className="team1">
           <span className="country-name text-dark d-block font-weight-bold">
           {Numfilm.title}
           </span>

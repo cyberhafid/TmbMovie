@@ -8,7 +8,7 @@ import  { Row, Col , Container} from 'reactstrap';
       return (
 
    
-          <Container  style={{ backgroundColor: '#333', borderColor: '#333' }}>
+          <div  style={{ backgroundColor: '#333', borderColor: '#333' }}>
         <Row>
               {/* Grid column */}
               <Col md="12">
@@ -48,7 +48,7 @@ import  { Row, Col , Container} from 'reactstrap';
           </div></Row>
 
 
-          </Container>
+          </div>
       
   
       );

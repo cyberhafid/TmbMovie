@@ -4,7 +4,7 @@ import React from 'react';
 
 
 
-const CardsList = ({Numfilm, changeDiv, className}) => {
+const CardsList = ({Numfilm, className}) => {
   return (
 <React.Fragment>
 
@@ -14,8 +14,16 @@ const CardsList = ({Numfilm, changeDiv, className}) => {
   <img    src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${Numfilm.poster_path}`}/>
   
   
-  <div  onMouseOver={changeDiv} className={className}>
-    <div className="text">Hello World className="{className}"</div>
+  <div  className="overlay calque">
+  
+    <div>
+          <div className="calque titlecalque">
+          {Numfilm.title}
+          </div>
+          <div className="textcalque">
+          {Numfilm.overview}
+          </div>
+        </div>
   </div>
 
 
