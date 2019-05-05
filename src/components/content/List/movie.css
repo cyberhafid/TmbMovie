@@ -1,7 +1,7 @@
 .container {
   position: relative;
   width: 100%;
-  padding: 10px 10px 10px;
+
 }
 
 .image {
@@ -62,35 +62,5 @@ font-weight: bold;
   z-index:2;
   height: 10%;
 
-  
-}
-.ancientitlecalque {
-  bottom: 0;
-white-space: wrap; 
-color: white;
-font-size: 1em;
-position: absolute;
-font-weight: bold;
-top: 20%;
-left: 0;
-right: 0;
-
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-}
-.ancientextcalque {
-  text-align: justify;
-  white-space: wrap; 
-  color: white;
-  font-size: 0.8em;
-  font-weight: bold;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 100%;
-  padding: 10px 10px 10px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  
   
 }

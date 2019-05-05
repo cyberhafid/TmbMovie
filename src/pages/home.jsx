@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 import MenuCategorie from '../components/content/menu/MenuCategorie';
 import ListMoviesHome from './ListMoviesHome';
 

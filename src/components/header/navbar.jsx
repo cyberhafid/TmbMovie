@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
 import {
-
+  Navbar,
   Nav,
   NavItem
 } from 'reactstrap';
+import './navbar.css';
+
+
 import Inscription from './login/inscription';
 import Connex from './login/connex';
 
@@ -29,59 +29,46 @@ export default class MyNavbar extends React.Component {
     return (
       <div>
 
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div>  <NavLink  className='nav-link' to="/">
-  
-            <p className="text-light title-nav">Cinema</p>
-          </NavLink> </div>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                  <NavLink  className='nav-link' to="/"> Home </NavLink> <span class="sr-only">(current)</span>
-              </li>
-              <li className="nav-item">
-               <NavLink className='nav-link' to="/ListMoviesHome"> Premiere LISTE </NavLink>
-              </li>
-              <li className="nav-item">
-                 <NavLink className='nav-link' to="/deuxieme"> Deuxieme </NavLink>
-              </li>
-              <li className="nav-item">
-               <NavLink className='nav-link' to="/test"> Game </NavLink>
-             
-             
-             </li>
-     
-            </ul>
+        <Navbar className="navbar navbar-expand-lg fond" expand="md">
 
-            <Nav className="ml-auto" navbar>
-                        <NavItem className="margin-button" media="screen">
-                          <Connex
-                            buttonLabel='LOG IN'
-                          />
-                        </NavItem>
-                        <NavItem id="homeAnchor" className="pointer">
-          <span className="nav-link">
-            <FontAwesomeIcon icon="home" /> Home
-          </span>
-        </NavItem>
-        <NavItem
-         
-        >
-          <span className="nav-link">
-            <FontAwesomeIcon icon="sign-out-alt" /> Logout
-          </span>
-        </NavItem>
-                        <NavItem>
 
-                          <Inscription
-                            buttonLabel='SIGN IN'
-                          />
-                        </NavItem>
-                      </Nav>
 
-          </div>
-        </nav>
+
+          <Nav className="ml-auto" navbar>
+
+            <NavItem>
+              <NavLink className='nav-link liennav' to="/">Home</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink className='nav-link liennav' to="/ListMoviesHome">Premiere</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink className='nav-link liennav' to="/ListMoviesHome">Premiere</NavLink>
+            </NavItem>
+
+
+          </Nav>
+
+          <Nav className="ml-auto" navbar>
+            <NavItem className="margin-button" media="screen">
+              <Connex
+                buttonLabel='LOG IN'
+              />
+            </NavItem>
+
+            <NavItem>
+
+              <Inscription
+                buttonLabel='SIGN IN'
+              />
+            </NavItem>
+          </Nav>
+
+
+        </Navbar>
 
       </div>
     );

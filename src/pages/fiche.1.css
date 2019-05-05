@@ -16,7 +16,7 @@
   bottom: 100%;
   left: 0;
   right: 0;
-   overflow: visible;
+   overflow: hidden;
   width: 100%;
   height:0;
   transition: .2s ease;
@@ -30,22 +30,21 @@
 .calque {
   padding: 0 0px 0px;
   background: rgba(78, 78, 78, 0.548);
-  list-style-type: none;
+ 
 
 }
 .titlecalque {
-    bottom: 0;
-  white-space: wrap; 
   color: white;
   font-size: 1em;
-  position: absolute;
-  font-weight: bold;
-  top: 20%;
-  left: 0;
-  right: 0;
-  
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+ line-height: 1.5em;
+text-align: center;
+font-weight: bold;
+ position: absolute;
+ top: 10%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 100%;
+ z-index:1;
 }
 .textcalque {
   text-align: justify;
@@ -55,8 +54,40 @@
   font-weight: bold;
   position: absolute;
   top: 40%;
-  left: 0;
-  right: 0;
+  left: 50%;
+  width: 100%;
+  padding: 10px 10px 10px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index:2;
+  height: 10%;
+
+  
+}
+.ancientitlecalque {
+  bottom: 0;
+white-space: wrap; 
+color: white;
+font-size: 1em;
+position: absolute;
+font-weight: bold;
+top: 20%;
+left: 0;
+right: 0;
+
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+.ancientextcalque {
+  text-align: justify;
+  white-space: wrap; 
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 100%;
   padding: 10px 10px 10px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
