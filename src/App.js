@@ -2,22 +2,31 @@ import React, { Component } from 'react';
 import { Route, BrowserRouter,  Switch } from 'react-router-dom';
 import './App.css';
 import Home from './pages/home';
-import Premiere from './pages/premiere';
+import Deuxieme from './pages/deuxieme';
 import MyNavbar from './components/header/navbar';
+import Footer from './components/footer/pied';
+import ListMoviesHome from './pages/ListMoviesHome';
+import Test from './pages/test';
+
+
 
 
 
 class App extends Component {
   render() {
+
     return (
   <BrowserRouter>
         <div className="App">
+
               < MyNavbar />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/premiere" component={Premiere} />
-
+            <Route path="/ListMoviesHome" component={ListMoviesHome} />
+            <Route path="/deuxieme" component={Deuxieme} />
+            <Route path="/test" component={Test} />
           </Switch>
+          < Footer />
        
         </div>
         </BrowserRouter>

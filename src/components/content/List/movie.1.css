@@ -1,0 +1,28 @@
+.current-page {
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+  
+  .country-card-container {
+    height:300px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .country-name {
+    font-size: 0.9rem;
+  }
+  
+  .country-region {
+    font-size: 0.7rem;
+  }
+  
+  .country-page,
+  .country-name,
+  .country-region {
+    line-height: 1;
+  }
+  
+
+  
