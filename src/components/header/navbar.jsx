@@ -48,6 +48,9 @@ export default class MyNavbar extends React.Component {
             <NavItem>
               <NavLink className='nav-link liennav' to="/ListMoviesHome">Premiere</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink className='nav-link liennav' to="/video">fiche youtuce</NavLink>
+            </NavItem>
 
 
           </Nav>

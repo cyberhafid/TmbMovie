@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import CardsList from '../components/content/List/CardsList';
-import '../components/content/List/movie.css';
+
 import { Link } from 'react-router-dom';
 
 
