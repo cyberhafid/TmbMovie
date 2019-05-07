@@ -1,8 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import {
+  Navbar,
+  Nav,
+  NavItem
+} from 'reactstrap';
 import './navbar.css';
 
+
+import Inscription from './login/inscription';
+import Connex from './login/connex';
 
 export default class MyNavbar extends React.Component {
   constructor(props) {
@@ -22,33 +29,49 @@ export default class MyNavbar extends React.Component {
     return (
       <div>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div>  <NavLink  className='nav-link' to="/">
-  
-            <p className="text-light title-nav">Cinema</p>
-          </NavLink> </div>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                  <NavLink  className='nav-link' to="/"> Home </NavLink> <span class="sr-only">(current)</span>
-              </li>
-              <li class="nav-item">
-               <NavLink className='nav-link' to="/premiere"> Premiere recup </NavLink>
-              </li>
-              <li class="nav-item">
-                 <NavLink className='nav-link' to="/bet"> Bet </NavLink>
-              </li>
-              <li class="nav-item">
-               <NavLink className='nav-link' to="/contact"> Contact </NavLink>
-              </li>
-     
-            </ul>
+        <Navbar className="navbar navbar-expand-lg fond" expand="md">
 
 
 
-          </div>
-        </nav>
+
+          <Nav className="ml-auto" navbar>
+
+            <NavItem>
+              <NavLink className='nav-link liennav' to="/">Home</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink className='nav-link liennav' to="/ListMoviesHome">Premiere</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink className='nav-link liennav' to="/ListMoviesHome">Premiere</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className='nav-link liennav' to="/video">fiche youtuce</NavLink>
+            </NavItem>
+
+
+          </Nav>
+
+          <Nav className="ml-auto" navbar>
+            <NavItem className="margin-button" media="screen">
+              <Connex
+                buttonLabel='LOG IN'
+              />
+            </NavItem>
+
+            <NavItem>
+
+              <Inscription
+                buttonLabel='SIGN IN'
+              />
+            </NavItem>
+          </Nav>
+
+
+        </Navbar>
 
       </div>
     );

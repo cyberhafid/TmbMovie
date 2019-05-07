@@ -1,0 +1,100 @@
+.container {
+  color: white;
+  font-size: 15px;
+}
+
+
+
+.film-title {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  font-weight: lighter ;
+}
+
+
+.film-synopsis{
+  color: white;
+  font-size: medium;
+  text-align: justify;
+}
+
+.video-item img {
+  max-width: 64px;
+}
+
+.video-detail  {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.list-group-item {
+  background: black;
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #eee;
+}
+
+
+
+.list-group-item:hover {
+  background-color: #eee;
+}
+
+
+
+
+
+
+
+.footermiddle
+{
+ 
+	position: absolute;
+	bottom: 0;
+  font-size: smaller;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+.rating {
+  line-height: 1;
+  display: inline-block;
+
+  &__item {
+    display: inline;
+    font-size: 0;
+
+    &::before {
+      font-size: 18px;
+      content: "★";
+      color: lightgray;
+    }
+  }
+
+  &__input {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+
+.rating:hover .rating__item::before {
+  color: rgb(238, 234, 15);
+}
+
+.rating__item:hover ~ .rating__item::before {
+  color: lightgray;
+}
+
+.rating__item--selected::before {
+  color: hotpink;
+}
