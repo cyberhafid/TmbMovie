@@ -2,7 +2,7 @@ import React from 'react';
 import { ListGroup, ListGroupItem } from 'reactstrap';
 import '../../header/navbar.css';
 import axios from 'axios';
-
+import { Link } from 'react-router-dom';
 
 
 export default class MenuCategorie extends React.Component {
@@ -42,8 +42,9 @@ fetchCategories(){
 
 <ListGroup >
 {this.state.persons.map((person, index) =>
-          <ListGroupItem key={index} className="list-group liennav">{person.name}</ListGroupItem>
-     
+  <Link  to={`/ListCat/${person.id}`}>    
+        <ListGroupItem key={index} className="list-group liennav">{person.name}</ListGroupItem>
+        </Link>      
      
           )} 
        

@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import { Row, Col, Container } from 'reactstrap';
-import ListMoviesHome from '../components/content/List/ListMoviesHome';
 import MenuCategorie from '../components/content/menu/MenuCategorie';
+import ListMoviesCat from '../components/content/List/ListMoviesCat';
 
 
 
 
 
-
-
-export default class Home extends Component {
+export default class Categorie extends Component {
   render() {
     return (
    
@@ -19,7 +17,7 @@ export default class Home extends Component {
          
           <Row>
                     <Col sm="10">
-            <ListMoviesHome/>
+            <ListMoviesCat/>
             </Col>
             <Col sm="2">
               <MenuCategorie />

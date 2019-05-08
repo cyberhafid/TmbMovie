@@ -4,9 +4,10 @@ import './App.css';
 import Home from './pages/home';
 import MyNavbar from './components/header/navbar';
 import Footer from './components/footer/pied';
-import ListMoviesHome from './pages/ListMoviesHome';
-import Fiche from './pages/fiche';
-import Video from './pages/video';
+import ListMoviesHome from './components/content/List/ListMoviesHome';
+import Fiche from './components/content/fiche/fiche';
+import ListMoviesCat from './components/content/List/ListMoviesCat';
+import Commande from './components/content/reservation/Commande';
 
 
 
@@ -22,9 +23,10 @@ class App extends Component {
           < MyNavbar />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/ListMoviesHome" component={ListMoviesHome} />
+            <Route path="/ListMovies" component={ListMoviesHome} />
+            <Route path="/ListCat/:id" component={ListMoviesCat} />
             <Route path="/fiche/:id" component={Fiche} />
-            <Route path="/video" component={Video} />
+            <Route path="/commande" component={Commande} />
 
           </Switch>
           < Footer />

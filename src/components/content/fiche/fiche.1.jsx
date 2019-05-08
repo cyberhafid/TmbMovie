@@ -3,7 +3,8 @@ import { Row, Col, Container, Media } from 'reactstrap';
 import './fiche.scss';
 
 import axios from 'axios';
-import MenuCategorie from '../components/content/menu/MenuCategorie';
+import MenuCategorie from '../menu/MenuCategorie';
+
 
 
 
