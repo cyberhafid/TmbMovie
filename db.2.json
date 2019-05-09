@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "isSigned": false,
+      "modal": true,
+      "username": "test",
+      "email": "mm@gmail.com",
+      "password": "123",
+      "solde": 391,
+      "mises": [],
+      "id": 9
+    },
+    {
+      "isSigned": false,
+      "modal": true,
+      "username": "",
+      "email": "",
+      "password": "",
+      "solde": 0,
+      "mises": [],
+      "id": 10
+    }
+  ]
+}
