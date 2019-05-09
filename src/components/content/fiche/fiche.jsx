@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Container, Media } from 'reactstrap';
+import { Row, Col, Container, Button, Media } from 'reactstrap';
 import './fiche.scss';
 
 import axios from 'axios';
@@ -47,8 +47,13 @@ export default class Fiche extends React.Component {
     this.state = {
 
       videos: [],
+      mises: [],
+     
+      solde: 0
 
     };
+
+    this.AjouterFavoris = this.AjouterFavoris.bind(this);
   }
 
   componentDidMount() {
@@ -62,6 +67,53 @@ export default class Fiche extends React.Component {
       // this.fetchVideo();
     }
   }
+
+  
+  onChange(e) {
+    this.setState({
+     [e.target.name]: e.target.value,
+   
+    });
+   }
+
+
+  AjouterFavoris(e) {
+ 
+      e.preventDefault();
+      const config = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(this.state.mises),
+       };
+  
+       const url = "http://localhost:3000/users/";
+       fetch(url, config)
+       .then(res => res.json())
+       console.log(this.filmId)
+        .then(res => {
+          if (res.error || this.state.name==='') {
+            alert('le champ name doit etre non vide');
+          } else {
+            alert(`Film ajouté avec l'ID ${res}!`);
+          }
+        }).catch(e => {
+          console.error(e);
+          alert('Erreur lors de l\'ajout d\'un Film ');
+        });
+  
+     
+    }
+
+ 
+
+
+
+
+
+
+
 
   fetchMovie() {
     const filmId = this.props.match.params.id;
@@ -158,7 +210,10 @@ export default class Fiche extends React.Component {
                     </Col>
                     <Col sm="4" >
                       <Row>
-                        <span>Origine : {this.state.popularity}</span>  </Row>
+                    
+                        <Button color="warning" onClick={this.AjouterFavoris}>Supprimer</Button>
+                        <span>Origine : {this.state.popularity}</span>  
+                        </Row>
                     </Col>
                   </Row>
 

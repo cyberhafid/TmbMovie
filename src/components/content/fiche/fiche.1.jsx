@@ -77,15 +77,23 @@ export default class Fiche extends React.Component {
 
   fetchMovie() {
     const filmId = this.props.match.params.id;
-    axios.get(`https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${process.env.REACT_APP_API_KEY}`)
+    
+    axios.get(`https://api.themoviedb.org/3/movie/${filmId}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`)
       .then(res => {
-        const persons = res.data.results;
+
+        const id = res.data.id;
+        const overview = res.data.overview;
+        const title = res.data.title;
+        //console.log(persons);
         this.setState({
-          persons,
+          id,
+          overview,
+          title,
           film: filmId
 
         });
       })
+     
 
     axios.get(`https://api.themoviedb.org/3/movie/${filmId}/videos?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`)
 

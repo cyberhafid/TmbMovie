@@ -8,16 +8,41 @@ import ListMoviesHome from './components/content/List/ListMoviesHome';
 import Fiche from './components/content/fiche/fiche';
 import ListMoviesCat from './components/content/List/ListMoviesCat';
 import Commande from './components/content/reservation/Commande';
-
-
+import { userContextData, UserProvider } from './components/tools/userProvider';
+import Axios from 'axios';
 
 
 
 class App extends Component {
-  render() {
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      ...userContextData,
+      updateContextField: this.updateContextField,
+      updateUserProfile: this.updateUserProfile
+    };
+  }
+
+  updateContextField = (field, value) => {
+    this.setState({ [field]: value });
+  }
+
+  updateUserProfile = (userId, datas) => {
+    Axios.patch(`http://localhost:3000/users/${userId}`, datas)
+      .then(res => {
+        console.log(res);
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  }
+
+
+  render() {
     return (
       <BrowserRouter>
+      <UserProvider value={this.state}>
         <div className="App">
 
           < MyNavbar />
@@ -32,6 +57,8 @@ class App extends Component {
           < Footer />
 
         </div>
+      
+      </UserProvider>
       </BrowserRouter>
     );
   }
