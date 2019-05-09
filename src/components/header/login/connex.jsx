@@ -34,13 +34,14 @@ export default class Connex extends React.Component {
 
   submitForm(e) {
     e.preventDefault();
-    const url = 'http://localhost:3000/users';
+    const url = 'http://localhost:3000/users/';
     axios.get(url)
       .then((res) => {
         const emails = res.data.map((user) => user.email.toLowerCase());
+      
         if (emails.includes(this.state.email.toLowerCase())) {
           const index = emails.indexOf(this.state.email.toLowerCase());
-          if (res.data[index].password.toString().toLowerCase() === this.state.password.toLowerCase()) {
+          if (res.data[index].password.toString() === this.state.password.toLowerCase()) {
             this.setState({ isAuthentified: true });
             this.context.updateContextField('email', res.data[index].email);
             this.context.updateContextField('isAuthentified', true);
@@ -51,7 +52,7 @@ export default class Connex extends React.Component {
         }
       })
       .catch((err) => {
-        alert('Erreur lors de la connexion ');
+        alert(this.state.user);
         console.log(err);
       });
 

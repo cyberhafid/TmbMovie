@@ -19,16 +19,6 @@
       "solde": 0,
       "mises": [],
       "id": 10
-    },
-    {
-      "isSigned": false,
-      "modal": true,
-      "username": "test",
-      "email": "dd@gmail.com",
-      "password": "123",
-      "solde": "100034",
-      "mises": [],
-      "id": 11
     }
   ]
 }
