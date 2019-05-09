@@ -4,8 +4,8 @@
       "id": 1,
       "username": "usertest",
       "surrname": "surok",
-      "mail": "mMonmail",
-      "password": "tonpasse",
+      "email": "dd@gmail.com",
+      "password": "123",
       "solde": "1000",
       "mises": [
         {
@@ -20,8 +20,8 @@
       "id": 2,
       "username": "RRRRRR",
       "surrname": "surok",
-      "mail": "mMonmail",
-      "password": "tonpasse",
+      "email": "zz@gmail.com",
+      "password": "123",
       "solde": "10",
       "mises": [
         {
@@ -56,6 +56,16 @@
           "versement": "30"
         }
       ]
+    },
+    {
+      "isSigned": false,
+      "modal": true,
+      "username": "test",
+      "email": "cyberhafid@gmail.com",
+      "password": "123",
+      "solde": "",
+      "mises": [],
+      "id": 3
     }
   ]
 }
