@@ -10,7 +10,7 @@ export default class Connex extends React.Component {
       isSigned: false,
       modal: false,
       isAuthentified: false,
-      email: 'dd@gmail.com',
+      email: 'cyberhafid@gmail.com',
       password: '123',
       mises: null,
       solde: ''

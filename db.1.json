@@ -4,7 +4,7 @@
       "id": 1,
       "username": "usertest",
       "surrname": "surok",
-      "mail": "aa@gmail.com",
+      "email": "cyberhafid@gmail.com",
       "password": "123",
       "solde": "1000",
       "mises": [
@@ -20,7 +20,7 @@
       "id": 2,
       "username": "RRRRRR",
       "surrname": "surok",
-      "mail": "bb@gmail.com",
+      "email": "bb@gmail.com",
       "password": "123",
       "solde": "10",
       "mises": [
@@ -30,7 +30,6 @@
           "versement": "15",
           "pari": "20"
         }
-
       ]
     },
     {
