@@ -6,13 +6,49 @@
       "surrname": "surok",
       "email": "cyberhafid@gmail.com",
       "password": "123",
-      "solde": "1000",
+      "solde": "1000100",
       "mises": [
         {
-          "startDate": "2019-05-10T08:44:29.444Z",
-          "idfilm": "299537",
-          "versement": "299537",
-          "pari": "299537"
+          "startDate": "2019-05-10T18:41:14.308Z",
+          "idfilm": "680",
+          "versement": "680",
+          "pari": "680"
+        },
+        {
+          "startDate": "2019-05-10T18:41:24.828Z",
+          "idfilm": "680",
+          "versement": "680",
+          "pari": "680"
+        },
+        {
+          "startDate": "2019-05-10T18:41:31.179Z",
+          "idfilm": "680",
+          "versement": "680",
+          "pari": "680"
+        },
+        {
+          "startDate": "2019-05-10T18:41:57.769Z",
+          "idfilm": "293660",
+          "versement": "293660",
+          "pari": "293660"
+        },
+        {
+          "startDate": "2019-05-10T18:42:00.975Z",
+          "idfilm": "293660",
+          "versement": "293660",
+          "pari": "293660"
+        },
+        {
+          "startDate": "2019-05-10T18:42:06.422Z",
+          "idfilm": "543103",
+          "versement": "543103",
+          "pari": "543103"
+        },
+        {
+          "startDate": "2019-05-10T19:42:10.691Z",
+          "idfilm": "543103",
+          "versement": "543103",
+          "pari": "543103"
         }
       ]
     },

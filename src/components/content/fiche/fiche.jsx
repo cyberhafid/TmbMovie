@@ -60,7 +60,7 @@ export default class Fiche extends React.Component {
 
   componentDidMount() {
     this.fetchMovie();
-    // this.fetchVideo();
+    this.fetchUserData()
   }
 
   componentDidUpdate() {
@@ -130,29 +130,21 @@ export default class Fiche extends React.Component {
 }
 
 
-  AjoutermmFavoris() {
-       axios.post(`http://localhost:3000/users/${this.context.id}`)
-      .then(res => {
-       
-        const mise = {
-          'startDate': new Date(),
-          'idmatch': new Date(),
-          'pari': new Date(),
-          'solde': "5"
+AjouterFavoris222() {
+        
+        const url = `http://localhost:3000/users/3`;
+             
+        const users  = {
+          mises: ['pid1234', 'pid1235']
         };
-        let mises = this.context.mises;
-        mises.push(mise);
-        console.log(mises);
-        const user = {
-          email: this.context.email,
-          solde: this.context.email,
-          mises: [...mises]
-        };
-       
-        })
-      .catch((err) => console.log(err));
-    
-    }
+
+        axios.put(url, {mises: ['pid1234', 'pid1235']
+                 }).then(resp=> {
+          console.log(resp.data);
+      }).catch(error => {
+          console.log(error);
+      });   
+   }
 
  
 
