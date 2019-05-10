@@ -4,7 +4,7 @@
       "id": 1,
       "username": "usertest",
       "surrname": "surok",
-      "email": "aa@gmail.com",
+      "mail": "aa@gmail.com",
       "password": "123",
       "solde": "1000",
       "mises": [
@@ -17,8 +17,20 @@
       ]
     },
     {
-      "solde": 7,
-      "id": 2
+      "id": 2,
+      "username": "RRRRRR",
+      "surrname": "surok",
+      "mail": "bb@gmail.com",
+      "password": "123",
+      "solde": "10",
+      "mises": [
+        {
+          "startDate": "2019-10-07",
+          "idmatch": "0000",
+          "versement": "15",
+          "pari": "20"
+        }
+      ]
     },
     {
       "isSigned": false,
@@ -30,13 +42,12 @@
       "mises": [],
       "id": 3
     },
-    [],
     {
       "isSigned": false,
       "modal": true,
-      "username": "df",
-      "email": "dfgd@fff.ff",
-      "password": "dgfdg",
+      "username": "nsamsdf",
+      "email": "zz@gmail.com",
+      "password": "123",
       "solde": "",
       "mises": [],
       "id": 4

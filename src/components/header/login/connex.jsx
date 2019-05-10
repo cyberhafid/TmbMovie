@@ -10,8 +10,8 @@ export default class Connex extends React.Component {
       isSigned: false,
       modal: false,
       isAuthentified: false,
-      email: 'dd@gmail.com',
-      password: '123',
+      email: '',
+      password: '',
       mises: null,
       solde: ''
     };
@@ -36,7 +36,9 @@ export default class Connex extends React.Component {
     e.preventDefault();
     const url = 'http://localhost:3000/users';
     axios.get(url)
+   
       .then((res) => {
+        console.log(res)
         const emails = res.data.map((user) => user.email.toLowerCase());
         if (emails.includes(this.state.email.toLowerCase())) {
           const index = emails.indexOf(this.state.email.toLowerCase());
