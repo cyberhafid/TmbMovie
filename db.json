@@ -4,15 +4,15 @@
       "id": 1,
       "username": "usertest",
       "surrname": "surok",
-      "mail": "aa@gmail.com",
+      "email": "cyberhafid@gmail.com",
       "password": "123",
       "solde": "1000",
       "mises": [
         {
-          "startDate": "2015-10-07",
-          "idmatch": "999999",
-          "versement": "22222",
-          "pari": "11111"
+          "startDate": "2019-05-10T08:44:29.444Z",
+          "idfilm": "299537",
+          "versement": "299537",
+          "pari": "299537"
         }
       ]
     },
@@ -20,7 +20,7 @@
       "id": 2,
       "username": "RRRRRR",
       "surrname": "surok",
-      "mail": "bb@gmail.com",
+      "email": "bb@gmail.com",
       "password": "123",
       "solde": "10",
       "mises": [
@@ -41,16 +41,6 @@
       "solde": "",
       "mises": [],
       "id": 3
-    },
-    {
-      "isSigned": false,
-      "modal": true,
-      "username": "nsamsdf",
-      "email": "zz@gmail.com",
-      "password": "123",
-      "solde": "",
-      "mises": [],
-      "id": 4
     }
   ]
 }

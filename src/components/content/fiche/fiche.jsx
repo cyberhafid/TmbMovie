@@ -5,7 +5,7 @@ import './fiche.scss';
 import axios from 'axios';
 import MenuCategorie from '../menu/MenuCategorie';
 
-
+import { UserContext } from '../../tools/userProvider';
 
 
 const range = (min, max) =>
@@ -41,14 +41,16 @@ const Rating = ({ min, max, onChange, value }) => {
 }
 
 export default class Fiche extends React.Component {
-
+  static contextType = UserContext
   constructor(props) {
     super(props);
     this.state = {
 
       videos: [],
+
+      user: {},
       mises: [],
-     
+      versement: '',
       solde: 0
 
     };
@@ -71,39 +73,85 @@ export default class Fiche extends React.Component {
   
   onChange(e) {
     this.setState({
-     [e.target.name]: e.target.value,
+  [e.target.name]: e.target.value,
    
     });
    }
 
 
-  AjouterFavoris(e) {
- 
-      e.preventDefault();
-      const config = {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(this.state.mises),
-       };
-  
-       const url = "http://localhost:3000/users/";
-       fetch(url, config)
-       .then(res => res.json())
-       console.log(this.filmId)
-        .then(res => {
-          if (res.error || this.state.name==='') {
-            alert('le champ name doit etre non vide');
-          } else {
-            alert(`Film ajouté avec l'ID ${res}!`);
-          }
-        }).catch(e => {
-          console.error(e);
-          alert('Erreur lors de l\'ajout d\'un Film ');
-        });
-  
-     
+
+
+   AjouterFavoris() {
+
+    
+   this.state.mises.push({
+     "startDate": new Date(),
+     "idfilm": this.state.film,
+     "versement": this.state.film,
+     "pari": this.state.film
+   })
+
+   this.state.user.mises = this.state.mises
+   const config = {
+     method: 'PATCH',
+     headers: {
+       'Content-Type': 'application/json',
+     },
+     body: JSON.stringify(this.state.user),
+   };
+   const url = `http://localhost:3000/users/${this.context.id}/`;
+   fetch(url, config)
+     .then(res => res.json())
+     .then(res => {
+       if (res.error) {
+         alert('le champ panier doit etre non vide');
+       } else {
+         alert(`Montant enregistré sous le numero ${res}!`);
+         //this.fetchUserData();
+       }
+     }).catch(e => {
+       console.error(e);
+       alert('Votre CB ne sera pas debité ');
+     });
+ }
+
+
+ fetchUserData() {
+  axios.get(`http://localhost:3000/users/${this.context.id}`)
+    .then(res => {
+      const mises = res.data.mises;
+      const user = res.data;
+      this.setState({
+        mises,
+        user
+      });
+    })
+    .catch((err) => console.log(err))
+}
+
+
+  AjoutermmFavoris() {
+       axios.post(`http://localhost:3000/users/${this.context.id}`)
+      .then(res => {
+       
+        const mise = {
+          'startDate': new Date(),
+          'idmatch': new Date(),
+          'pari': new Date(),
+          'solde': "5"
+        };
+        let mises = this.context.mises;
+        mises.push(mise);
+        console.log(mises);
+        const user = {
+          email: this.context.email,
+          solde: this.context.email,
+          mises: [...mises]
+        };
+       
+        })
+      .catch((err) => console.log(err));
+    
     }
 
  
