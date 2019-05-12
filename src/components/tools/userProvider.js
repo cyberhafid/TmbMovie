@@ -5,7 +5,7 @@ const datas = {
   email: '',
   isAuthentified: false,
   solde: 0,
-  mises: []
+  favoris: []
 };
 
 export const UserContext = React.createContext({});

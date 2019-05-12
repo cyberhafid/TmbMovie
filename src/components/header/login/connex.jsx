@@ -10,7 +10,7 @@ export default class Connex extends React.Component {
       isSigned: false,
       modal: false,
       isAuthentified: false,
-      email: 'dd@gmail.com',
+      email: 'cyberhafid@gmail.com',
       password: '123',
       mises: null,
       solde: ''
@@ -36,7 +36,9 @@ export default class Connex extends React.Component {
     e.preventDefault();
     const url = 'http://localhost:3000/users/';
     axios.get(url)
+   
       .then((res) => {
+        console.log(res)
         const emails = res.data.map((user) => user.email.toLowerCase());
       
         if (emails.includes(this.state.email.toLowerCase())) {
@@ -63,7 +65,7 @@ export default class Connex extends React.Component {
     return (
       <div>
 
-        <Button color="primary" className='modal-navbar' onClick={this.toggle}>{this.props.buttonLabel}</Button>
+        <Button color="warning" className='modal-navbar'  onClick={this.toggle}>{this.props.buttonLabel}</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>LOG IN   ZONE</ModalHeader>
         

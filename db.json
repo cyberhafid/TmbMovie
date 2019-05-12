@@ -4,15 +4,16 @@
       "id": 1,
       "username": "usertest",
       "surrname": "surok",
-      "email": "dd@gmail.com",
+      "email": "cyberhafid@gmail.com",
       "password": "123",
-      "solde": "1000",
-      "mises": [
+      "solde": "12",
+      "favoris": [
         {
-          "startDate": "2015-10-07",
-          "idmatch": "999999",
-          "versement": "22222",
-          "pari": "11111"
+          "startDate": "2019-05-12T15:06:40.241Z",
+          "idFilm": "299534",
+          "titre": "Avengers: Endgame",
+          "image": "/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+          "prix": 8.6
         }
       ]
     },
@@ -20,52 +21,34 @@
       "id": 2,
       "username": "RRRRRR",
       "surrname": "surok",
-      "email": "zz@gmail.com",
+      "email": "bb@gmail.com",
       "password": "123",
-      "solde": "10",
-      "mises": [
+      "solde": "12",
+      "favoris": [
         {
-          "startDate": "2019-10-07",
-          "idmatch": "0000",
-          "versement": "15",
-          "pari": "20"
+          "startDate": "2019-05-12T14:47:11.517Z",
+          "idFilm": "299534",
+          "titre": "Avengers: Endgame",
+          "image": "/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+          "prix": 8.6
         },
         {
-          "startDate": "2019-04-29T20:09:04.980Z",
-          "idmatch": "quelMatch",
-          "versement": "10"
-        },
-        {
-          "startDate": "2019-04-29T20:16:47.857Z",
-          "idmatch": "quelMatch",
-          "versement": "5"
-        },
-        {
-          "startDate": "2019-04-29T20:23:21.896Z",
-          "idmatch": "quelMatch",
-          "versement": "7"
-        },
-        {
-          "startDate": "2019-04-29T20:24:14.573Z",
-          "idmatch": "quelMatch",
-          "versement": "8"
-        },
-        {
-          "startDate": "2019-04-29T20:50:34.932Z",
-          "idmatch": "quelMatch",
-          "versement": "30"
+          "startDate": "2019-05-12T14:47:15.212Z",
+          "idFilm": "150540",
+          "titre": "Inside Out",
+          "image": "/aAmfIX3TT40zUHGcCKrlOZRKC7u.jpg",
+          "prix": 8
         }
       ]
     },
     {
-      "isSigned": false,
-      "modal": true,
-      "username": "test",
-      "email": "cyberhafid@gmail.com",
+      "id": 2,
+      "username": "RRRRRR",
+      "surrname": "surok",
+      "email": "bb@gmail.com",
       "password": "123",
-      "solde": "1000",
-      "mises": [],
-      "id": 3
+      "solde": "10",
+      "favoris": []
     }
   ]
 }

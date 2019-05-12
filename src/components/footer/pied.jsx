@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../App.css';
+import '../header/navbar.scss';
 import { Row, Col } from 'reactstrap';
 
 
@@ -7,8 +7,8 @@ export default class Footer extends Component {
   render() {
     return (
 
+      <div className="container-fluid backg fond">
 
-      <div style={{ backgroundColor: '#333', borderColor: '#333' }}>
         <Row>
           {/* Grid column */}
           <Col md="12">

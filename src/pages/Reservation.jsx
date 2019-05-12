@@ -15,14 +15,9 @@ export default class Reservation extends Component {
    
         <div className="container-fluid backg">
          
-          <Row>
-                    <Col sm="10">
+    
             <Commande/>
-            </Col>
-            <Col sm="2">
-              <MenuCategorie />
-            </Col>
-          </Row>          
+            
    
       </div>
     );

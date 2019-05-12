@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListGroup, ListGroupItem } from 'reactstrap';
-import '../../header/navbar.css';
+import './menu.scss';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 

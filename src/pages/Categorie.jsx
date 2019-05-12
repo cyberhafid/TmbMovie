@@ -15,14 +15,9 @@ export default class Categorie extends Component {
    
         <div className="container-fluid backg">
          
-          <Row>
-                    <Col sm="10">
+        
             <ListMoviesCat/>
-            </Col>
-            <Col sm="2">
-              <MenuCategorie />
-            </Col>
-          </Row>          
+           
    
       </div>
     );
