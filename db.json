@@ -6,49 +6,49 @@
       "surrname": "surok",
       "email": "cyberhafid@gmail.com",
       "password": "123",
-      "solde": "1000100",
-      "mises": [
+      "solde": "12",
+      "favoris": [
         {
-          "startDate": "2019-05-10T18:41:14.308Z",
-          "idfilm": "680",
-          "versement": "680",
-          "pari": "680"
+          "startDate": "2019-05-12T14:36:12.547Z",
+          "idFilm": "287947",
+          "titre": "Shazam!",
+          "image": "/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
+          "prix": 7.2
         },
         {
-          "startDate": "2019-05-10T18:41:24.828Z",
-          "idfilm": "680",
-          "versement": "680",
-          "pari": "680"
+          "startDate": "2019-05-12T14:36:17.614Z",
+          "idFilm": "550",
+          "titre": "Fight Club",
+          "image": "/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg",
+          "prix": 8.4
         },
         {
-          "startDate": "2019-05-10T18:41:31.179Z",
-          "idfilm": "680",
-          "versement": "680",
-          "pari": "680"
+          "startDate": "2019-05-12T14:36:23.871Z",
+          "idFilm": "550",
+          "titre": "Fight Club",
+          "image": "/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg",
+          "prix": 8.4
         },
         {
-          "startDate": "2019-05-10T18:41:57.769Z",
-          "idfilm": "293660",
-          "versement": "293660",
-          "pari": "293660"
+          "startDate": "2019-05-12T14:36:29.177Z",
+          "idFilm": "14160",
+          "titre": "Up",
+          "image": "/nk11pvocdb5zbFhX5oq5YiLPYMo.jpg",
+          "prix": 7.9
         },
         {
-          "startDate": "2019-05-10T18:42:00.975Z",
-          "idfilm": "293660",
-          "versement": "293660",
-          "pari": "293660"
+          "startDate": "2019-05-12T14:36:46.493Z",
+          "idFilm": "106646",
+          "titre": "The Wolf of Wall Street",
+          "image": "/vK1o5rZGqxyovfIhZyMELhk03wO.jpg",
+          "prix": 7.9
         },
         {
-          "startDate": "2019-05-10T18:42:06.422Z",
-          "idfilm": "543103",
-          "versement": "543103",
-          "pari": "543103"
-        },
-        {
-          "startDate": "2019-05-10T19:42:10.691Z",
-          "idfilm": "543103",
-          "versement": "543103",
-          "pari": "543103"
+          "startDate": "2019-05-12T14:36:47.661Z",
+          "idFilm": "106646",
+          "titre": "The Wolf of Wall Street",
+          "image": "/vK1o5rZGqxyovfIhZyMELhk03wO.jpg",
+          "prix": 7.9
         }
       ]
     },
@@ -59,7 +59,7 @@
       "email": "bb@gmail.com",
       "password": "123",
       "solde": "10",
-      "mises": [
+      "favoris": [
         {
           "startDate": "2019-10-07",
           "idmatch": "0000",
@@ -69,14 +69,13 @@
       ]
     },
     {
-      "isSigned": false,
-      "modal": true,
-      "username": "dd",
-      "email": "dd@gmail.com",
+      "id": 2,
+      "username": "RRRRRR",
+      "surrname": "surok",
+      "email": "bb@gmail.com",
       "password": "123",
-      "solde": "",
-      "mises": [],
-      "id": 3
+      "solde": "10",
+      "favoris": []
     }
   ]
 }

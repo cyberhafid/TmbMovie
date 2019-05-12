@@ -16,7 +16,7 @@ export default class Home extends Component {
    
    
         <div className="container-fluid backg">
-         
+           
           <Row>
                     <Col sm="10">
             <ListMoviesHome/>

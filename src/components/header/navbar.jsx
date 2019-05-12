@@ -1,15 +1,7 @@
 import React from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
- 
-  Nav,
-  NavItem
-} from 'reactstrap';
+import {Collapse, Navbar, NavbarToggler, Nav,  NavItem} from 'reactstrap';
 
-
-
+import './navbar.scss';
 import ActiveUser from './activeUser';
 import { UserConsumer } from '../tools/userProvider';
 import { NavLink,Link, withRouter } from 'react-router-dom';
@@ -37,11 +29,7 @@ class MyNavbar extends React.Component {
   render() {
     const className = !this.state.isAuthentified ? 'toShow' : 'toHide';
     return (
-      <div>
-
-
-
-
+      <div className="container-fluid backg">
 
 
              <Navbar className="navbar navbar-expand-lg fond" expand="md">
@@ -73,7 +61,7 @@ class MyNavbar extends React.Component {
                     return (
                       <Nav className="ml-auto" navbar>
                         <NavItem className="margin-button" media="screen">
-                          <Connex
+                          <Connex className="margin-button"
                             buttonLabel='LOG IN'
                           />
                         </NavItem>

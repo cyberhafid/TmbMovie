@@ -5,6 +5,16 @@
 
 
 
+
+
+.blocfiche {
+  padding: 1em 0 2em 0;
+}
+
+
+
+
+
 .film-title {
   color: white;
   font-size: 30px;
@@ -25,7 +35,7 @@
 
 .video-detail  {
   margin-top: 10px;
-  padding: 10px;
+  padding: 0px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -33,29 +43,29 @@
 .list-group-item {
   background: black;
   cursor: pointer;
+  padding: 2px;
+
+}
+.list-group-item:hover {
+  background-color: #eee;
 }
 
 .list-group-item:hover {
   background-color: #eee;
 }
-
-
-
-.list-group-item:hover {
-  background-color: #eee;
+.prixfilm{
+  color: hsl(335, 76%, 52%);
+  font-weight: 900;
+  text-align: right;
+  font-size: 4em;
 }
-
-
-
-
-
-
 
 .footermiddle
 {
- 
-	position: absolute;
-	bottom: 0;
+
+  padding-top: 20px;
+  width: 100%;
+
   font-size: smaller;
   text-align: justify;
 }

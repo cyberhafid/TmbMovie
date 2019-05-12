@@ -65,7 +65,7 @@ export default class Connex extends React.Component {
     return (
       <div>
 
-        <Button color="primary" className='modal-navbar' onClick={this.toggle}>{this.props.buttonLabel}</Button>
+        <Button color="warning" className='modal-navbar'  onClick={this.toggle}>{this.props.buttonLabel}</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>LOG IN   ZONE</ModalHeader>
         
