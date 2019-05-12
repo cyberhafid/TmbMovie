@@ -4,51 +4,68 @@
       "id": 1,
       "username": "usertest",
       "surrname": "surok",
+      "email": "quoi",
+      "password": "123",
+      "solde": "12",
+      "article": {
+        "startDate": "2019-05-12T20:32:21.700Z",
+        "idFilm": "857",
+        "titre": "Saving Private Ryan",
+        "image": "/miDoEMlYDJhOCvxlzI0wZqBs9Yt.jpg",
+        "prix": 8.1
+      }
+    },
+    {
+      "id": 2,
+      "username": "RRRRRR",
+      "surrname": "surok",
+      "email": "bb@gmail.com",
+      "password": "123",
+      "solde": "12"
+    },
+    {
+      "id": 2,
+      "username": "RRRRRR",
+      "surrname": "surok",
+      "email": "bb@gmail.com",
+      "password": "123",
+      "solde": "10"
+    }
+  ],
+  "paniers": [
+    {
+      "id": 1,
+      "username": "usertest",
+      "surrname": "surok",
       "email": "cyberhafid@gmail.com",
       "password": "123",
-      "solde": "12",
-      "favoris": [
-        {
-          "startDate": "2019-05-12T15:06:40.241Z",
-          "idFilm": "299534",
-          "titre": "Avengers: Endgame",
-          "image": "/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
-          "prix": 8.6
-        }
-      ]
+      "solde": "12"
     },
     {
-      "id": 2,
-      "username": "RRRRRR",
-      "surrname": "surok",
-      "email": "bb@gmail.com",
-      "password": "123",
-      "solde": "12",
-      "favoris": [
-        {
-          "startDate": "2019-05-12T14:47:11.517Z",
-          "idFilm": "299534",
-          "titre": "Avengers: Endgame",
-          "image": "/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
-          "prix": 8.6
-        },
-        {
-          "startDate": "2019-05-12T14:47:15.212Z",
-          "idFilm": "150540",
-          "titre": "Inside Out",
-          "image": "/aAmfIX3TT40zUHGcCKrlOZRKC7u.jpg",
-          "prix": 8
+      "panier": {
+        "email": "quoi",
+        "article": {
+          "startDate": "2019-05-12T20:32:17.111Z",
+          "idFilm": "70160",
+          "titre": "The Hunger Games",
+          "image": "/iLJdwmzrHFjFwI5lvYAT1gcpRuA.jpg",
+          "prix": 7.1
         }
-      ]
+      },
+      "id": 2
     },
     {
-      "id": 2,
-      "username": "RRRRRR",
-      "surrname": "surok",
-      "email": "bb@gmail.com",
-      "password": "123",
-      "solde": "10",
-      "favoris": []
+      "panier": {
+        "email": "quoi",
+        "article": {
+          "startDate": "2019-05-12T20:32:21.700Z",
+          "idFilm": "857",
+          "titre": "Saving Private Ryan",
+          "image": "/miDoEMlYDJhOCvxlzI0wZqBs9Yt.jpg",
+          "prix": 8.1
+        }
+      },
+      "id": 3
     }
   ]
 }

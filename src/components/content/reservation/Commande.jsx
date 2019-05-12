@@ -22,7 +22,9 @@ export default class Commande extends React.Component {
     this.fetchUserData();
 
   }
-  fetchUserData() {
+
+
+    fetchUserData() {
     axios.get(`http://localhost:3000/users/${this.context.id}`)
       .then(res => {
         const favoris = res.data.favoris;
@@ -41,6 +43,9 @@ export default class Commande extends React.Component {
       [e.target.name]: e.target.value,
     });
   }
+
+
+
 
   submitForm(e) {
     e.preventDefault();
@@ -159,19 +164,19 @@ export default class Commande extends React.Component {
                   );
                 })
                 }
+
+
+<Row className="tab-sous-title">
+            <Col> <Button type="submit" value="Envoyer" >Submit</Button></Col>
+           
+        
+              <Col>Prix</Col>
+            </Row>
+
+
+
+
            </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

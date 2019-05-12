@@ -15,9 +15,8 @@ export default class Fiche extends React.Component {
 
       videos: [],
       user: {},
-      favoris: [],
-      versement: '',
-      solde: 0
+      panier: {},
+     
 
     };
 
@@ -45,12 +44,12 @@ export default class Fiche extends React.Component {
   }
 
   fetchUserData() {
-    axios.get(`http://localhost:3000/users/${this.context.id}`)
+    axios.get(`http://localhost:3000/`)
       .then(res => {
-        const favoris = res.data.favoris;
-        const user = res.data;
+        const panier = res.data.paniers;
+        const user = res.data.users
         this.setState({
-          favoris,
+          panier,
           user
         });
       })
@@ -58,10 +57,56 @@ export default class Fiche extends React.Component {
   }
 
 
+
   AjouterFavoris() {
 
-    const favori = {
+    const panier = {
+      email: "quoi",
+      article :{
+      "startDate": new Date(),
+      "idFilm": this.state.film,
+      "titre": this.state.title,
+      "image": this.state.poster_path,
+      "prix": this.state.vote_average
+      }
+    };
 
+
+
+    const url = `http://localhost:3000/paniers/`;
+    axios.post(url, {panier
+  }).then(resp=> {
+console.log(resp.data);
+}).catch(error => {
+console.log(error);
+}); 
+
+
+
+    this.context.updateUserProfile(this.context.id, panier);
+    alert(" Film bien ajouté a votre liste");
+
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  AjouterFavoris222() {
+
+    const favori = {
       "startDate": new Date(),
       "idFilm": this.state.film,
       "titre": this.state.title,
@@ -71,11 +116,21 @@ export default class Fiche extends React.Component {
     };
     let favoris = this.context.favoris;
     favoris.push(favori);
+    
     const user = {
-      email: this.context.email,
-      solde: "12",
+      panier: this.context.id,
       favoris: [...favoris]
     };
+
+    const url = `http://localhost:3000/sales/`;
+    axios.post(url, {user
+  }).then(resp=> {
+console.log(resp.data);
+}).catch(error => {
+console.log(error);
+}); 
+
+
 
     this.context.updateUserProfile(this.context.id, user);
     alert(" Film bien ajouté a votre liste");
