@@ -1,38 +1,9 @@
 import React from 'react'
 import { Row, Col, Button} from 'reactstrap';
+import Ficheetoile from './ficheetoile';
 
 
-const range = (min, max) =>
-  Array(max - min + 1).fill().map((_, i) => min + i)
 
-const RatingItem = ({ checked, colored, onChange, value }) => (
-  <label className={`rating__item ${colored ? 'rating__item--selected' : ''}`}>
-    <input
-      checked={checked}
-      className='rating__input'
-      onChange={(e) => onChange(value)}
-      type="radio"
-      value={value}
-    />
-  </label>
-)
-
-const Rating = ({ min, max, onChange, value }) => {
-  return (
-    <div className='rating'>
-      {
-        range(min, max).map(item => (
-          <RatingItem
-            colored={value >= item}
-            checked={value === item}
-            value={item}
-            onChange={onChange}
-          />
-        ))
-      }
-    </div>
-  )
-}
 
 
 
@@ -59,12 +30,8 @@ export default function FicheFilm({Idvideo, AjouterFavoris}) {
   <Col sm="4" >
   <Row>
   <Col sm="12"  >
-    <Rating
-      min={1}
-      max={10}
-      onChange={(rating) => this.setState({ rating })}
-      value={Idvideo.vote_average}
-    />
+  <Ficheetoile Nombre={Idvideo.vote_average} />
+    
     </Col>
     </Row>
     

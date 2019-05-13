@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Form, Container, Row, Col } from 'reactstrap';
+import { Button, Form, Card, Row, Col } from 'reactstrap';
 
 import { Link } from 'react-router-dom';
 
@@ -22,12 +22,11 @@ export default function CommandeFilm({Afilm} ) {
       const { idFilm, startDate, titre, image, prix } = mise;
 
       return (
-    
+        <Card body inverse color="primary" style={{ padding: '1em' }} >
         <Row className="tab-donnee" key={idx} >
-
-         
+          
           <Col>
-          <img width="100" src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${image}`} alt="alt" /> 
+          <img width="75" src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${image}`} alt="alt" /> 
            </Col>
            <Link to={`/fiche/${idFilm}`}>   <Col>  
            
@@ -37,8 +36,9 @@ export default function CommandeFilm({Afilm} ) {
 
           <Col>{prix}</Col>
           <Col>{prix}</Col>
-         
+    
         </Row>
+        </Card>
       );
     })
     }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './movie.css';
+import Ficheetoile from '../fiche/ficheetoile';
 
 
 
@@ -20,6 +21,11 @@ const CardsList = ({ Numfilm }) => {
             <div className="calque titlecalque">
               {Numfilm.title}
             </div>
+            <div>
+            <Ficheetoile Nombre={Numfilm.vote_average} />
+
+            </div>
+            
             <div className="textcalque">
               {Numfilm.overview}
             </div>
