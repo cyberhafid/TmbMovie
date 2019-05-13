@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "usertest",
+      "surrname": "surok",
+      "email": "cyberhafid@gmail.com",
+      "password": "123",
+      "solde": "12"
+      
+    },
+    {
+      "id": 2,
+      "username": "RRRRRR",
+      "surrname": "surok",
+      "email": "bb@gmail.com",
+      "password": "123",
+      "solde": "12"
+    },
+    {
+      "id": 2,
+      "username": "RRRRRR",
+      "surrname": "surok",
+      "email": "bb@gmail.com",
+      "password": "123",
+      "solde": "10"
+    }
+  ],
+  "paniers": [
+    {
+      "id": 1,
+      "username": "usertest",
+      "surrname": "surok",
+      "email": "cyberhafid@gmail.com",
+      "password": "123",
+      "solde": "12"
+    }
+   
+  ]
+}

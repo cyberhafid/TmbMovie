@@ -46,10 +46,10 @@ export default class Fiche extends React.Component {
   fetchUserData() {
     axios.get(`http://localhost:3000/`)
       .then(res => {
-        const panier = res.data.paniers;
+        const panierd = res.data.paniers;
         const user = res.data.users
         this.setState({
-          panier,
+          panierd,
           user
         });
       })
@@ -61,21 +61,20 @@ export default class Fiche extends React.Component {
   AjouterFavoris() {
 
     const panier = {
-      email: "quoi",
-      article :{
+   
       "startDate": new Date(),
       "idFilm": this.state.film,
       "titre": this.state.title,
       "image": this.state.poster_path,
       "prix": this.state.vote_average
-      }
+     
     };
 
 
 
-    const url = `http://localhost:3000/paniers/`;
-    axios.post(url, {panier
-  }).then(resp=> {
+ const url = `http://localhost:3000/paniers/`;
+ axios.post(url, panier
+  ).then(resp=> {
 console.log(resp.data);
 }).catch(error => {
 console.log(error);
@@ -83,24 +82,10 @@ console.log(error);
 
 
 
-    this.context.updateUserProfile(this.context.id, panier);
+    this.context.updateUserProfile(this.context.id);
     alert(" Film bien ajouté a votre liste");
 
   };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

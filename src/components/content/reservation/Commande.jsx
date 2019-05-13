@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button, Form, Container, Row, Col } from 'reactstrap';
 import './commande.scss';
 import { UserContext } from '../../tools/userProvider';
+import CommandeFilm from './CommandeFilm';
 export default class Commande extends React.Component {
   static contextType = UserContext
 
@@ -11,7 +12,7 @@ export default class Commande extends React.Component {
     super(props);
     this.state = {
       user: {},
-      favoris: [],
+      panier: [],
       versement: ''
     };
     this.onChange = this.onChange.bind(this);
@@ -20,17 +21,15 @@ export default class Commande extends React.Component {
 
   componentDidMount() {
     this.fetchUserData();
-
-  }
+    this.fetchUserDatap();
+ }
 
 
     fetchUserData() {
     axios.get(`http://localhost:3000/users/${this.context.id}`)
       .then(res => {
-        const favoris = res.data.favoris;
-        const user = res.data;
+       const user = res.data;
         this.setState({
-          favoris,
           user,
 
         });
@@ -38,13 +37,26 @@ export default class Commande extends React.Component {
       .catch((err) => console.log(err));
   }
 
+  fetchUserDatap() {
+    axios.get(`http://localhost:3000/paniers`)
+      .then(res => {
+        
+        const panier = res.data;
+        this.setState({
+         panier,
+         
+
+        });
+      })
+      .catch((err) => console.log(err));
+  }
+
+
   onChange(e) {
     this.setState({
       [e.target.name]: e.target.value,
     });
   }
-
-
 
 
   submitForm(e) {
@@ -77,6 +89,7 @@ export default class Commande extends React.Component {
   }
 
   render() {
+    console.log(this.state.panier);
     return (
       <React.Fragment>
 
@@ -122,62 +135,8 @@ export default class Commande extends React.Component {
 
             </div>
 
-          <div className="corps">
-            <Row className="tab-title">
-              <p><h2>Article de la commande  en cours</h2></p>
-            </Row>
-            <Row className="tab-sous-title">
-            <Col>Affiche</Col>
-            <Col>Titre</Col>
-            <Col>date</Col>
-        
-              <Col>Prix</Col>
-            </Row>
 
-
-
-            {this.state.favoris.map((mise, idx) => {
-        
-                  const { idFilm, startDate, titre, image, prix } = mise;
-                
-
-
-                  return (
-                 
-                  
-                 
-                    <Row className="tab-donnee" key={idx} >
-                
-                     
-                      <Col>
-                      <img width="100" src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${image}`} alt="alt" /> 
-                       </Col>
-                       <Link to={`/fiche/${idFilm}`}>   <Col>  
-                       
-                       
-                      {titre}</Col>  </Link>
-                       <Col>{startDate}</Col>
-
-                      <Col>{prix}</Col>
-                     
-                    </Row>
-                  );
-                })
-                }
-
-
-<Row className="tab-sous-title">
-            <Col> <Button type="submit" value="Envoyer" >Submit</Button></Col>
-           
-        
-              <Col>Prix</Col>
-            </Row>
-
-
-
-
-           </div>
-
+<CommandeFilm Afilm={this.state}/>
 
 
 

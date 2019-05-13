@@ -4,16 +4,9 @@
       "id": 1,
       "username": "usertest",
       "surrname": "surok",
-      "email": "quoi",
+      "email": "cyberhafid@gmail.com",
       "password": "123",
-      "solde": "12",
-      "article": {
-        "startDate": "2019-05-12T20:32:21.700Z",
-        "idFilm": "857",
-        "titre": "Saving Private Ryan",
-        "image": "/miDoEMlYDJhOCvxlzI0wZqBs9Yt.jpg",
-        "prix": 8.1
-      }
+      "solde": "12"
     },
     {
       "id": 2,
@@ -34,38 +27,56 @@
   ],
   "paniers": [
     {
-      "id": 1,
-      "username": "usertest",
-      "surrname": "surok",
-      "email": "cyberhafid@gmail.com",
-      "password": "123",
-      "solde": "12"
+      "startDate": "2019-05-13T18:11:52.522Z",
+      "idFilm": "9372",
+      "titre": "Super Size Me",
+      "image": "/9J2cYFtYRplFnHgn8V5ntCZEHut.jpg",
+      "prix": 6.7,
+      "id": 10
     },
     {
-      "panier": {
-        "email": "quoi",
-        "article": {
-          "startDate": "2019-05-12T20:32:17.111Z",
-          "idFilm": "70160",
-          "titre": "The Hunger Games",
-          "image": "/iLJdwmzrHFjFwI5lvYAT1gcpRuA.jpg",
-          "prix": 7.1
-        }
-      },
-      "id": 2
+      "startDate": "2019-05-13T18:19:47.030Z",
+      "idFilm": "287947",
+      "titre": "Shazam!",
+      "image": "/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
+      "prix": 7.2,
+      "id": 11
     },
     {
-      "panier": {
-        "email": "quoi",
-        "article": {
-          "startDate": "2019-05-12T20:32:21.700Z",
-          "idFilm": "857",
-          "titre": "Saving Private Ryan",
-          "image": "/miDoEMlYDJhOCvxlzI0wZqBs9Yt.jpg",
-          "prix": 8.1
-        }
-      },
-      "id": 3
+      "startDate": "2019-05-13T18:35:12.495Z",
+      "id": 12
+    },
+    {
+      "startDate": "2019-05-13T18:35:18.109Z",
+      "idFilm": "155",
+      "titre": "The Dark Knight",
+      "image": "/1hRoyzDtpgMU7Dz4JF22RANzQO7.jpg",
+      "prix": 8.4,
+      "id": 13
+    },
+    {
+      "startDate": "2019-05-13T18:47:27.489Z",
+      "idFilm": "299534",
+      "titre": "Avengers: Endgame",
+      "image": "/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+      "prix": 8.6,
+      "id": 14
+    },
+    {
+      "startDate": "2019-05-13T18:54:03.105Z",
+      "idFilm": "299537",
+      "titre": "Captain Marvel",
+      "image": "/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
+      "prix": 7.1,
+      "id": 15
+    },
+    {
+      "startDate": "2019-05-13T18:54:09.314Z",
+      "idFilm": "293310",
+      "titre": "Citizenfour",
+      "image": "/yNuLhb2y6I5cO7BfiJ7bdfllnIG.jpg",
+      "prix": 7.9,
+      "id": 16
     }
   ]
 }
